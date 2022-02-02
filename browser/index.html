@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Quickpeers Browser Example</title>
+    <script src="quickpeers.min.js"></script>
+  </head>
+  <body></body>
+  <script>
+    const quickpeers = new Quickpeers('some unique identifier', 5)
+    console.log(quickpeers.address)
+
+    // Directly connected peers
+    // Indirectly connected peers will be supported soon
+    quickpeers.on('connected', peer => {
+      console.log('Connected!', peer)
+
+      // Send a message to the new peer
+      quickpeers.send(peer, 'Some direct message to the peer')
+    })
+
+    // Once connected, you may broadcast to all peers
+    quickpeers.send('Some broadcast message to all peers')
+
+  </script>
+</html>

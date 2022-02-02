@@ -6,8 +6,8 @@ Quickpeers adds broadcast and direct messaging capabilities to [@geut/discovery-
 ## Status (WIP)
 This is currently a work in progress with a handful of objectives:
 
-- - Both browser and node.js compatibility
-- - Gossip protocol for messaging indirectly connected peers
-- - Message deduplication
-- - Secure messages based on sender and receipient using Gun's SEA security suite
-- - Minimize WebRTC signaling server communication when possible
+- Both browser and node.js compatibility
+- Gossip protocol for messaging indirectly connected peers
+- Message deduplication
+- Secure messages based on sender and receipient using Gun's SEA security suite
+- Minimize WebRTC signaling server communication when possible
