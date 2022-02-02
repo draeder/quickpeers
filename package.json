@@ -1,0 +1,28 @@
+{
+  "name": "quickpeers",
+  "version": "1.0.0",
+  "description": "Effortless peer-to-peer connections via the browser.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/draeder/quickpeers.git"
+  },
+  "author": "Daniel Raeder",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/draeder/quickpeers/issues"
+  },
+  "homepage": "https://github.com/draeder/quickpeers#readme",
+  "dependencies": {
+    "@geut/discovery-swarm-webrtc": "^4.3.1",
+    "gun": "^0.2020.1235",
+    "hyperswarm-web": "^2.1.1",
+    "kademlia-routing-table": "^1.0.0",
+    "readline": "^1.3.0",
+    "tape": "^5.5.0",
+    "wrtc": "^0.4.7"
+  }
+}
