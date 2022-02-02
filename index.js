@@ -1,6 +1,5 @@
 const crypto = require('crypto')
 const EventEmitter = require('events').EventEmitter
-const RoutingTable = require('kademlia-routing-table')
 const wrtc = require('wrtc')
 const Swarm = require('@geut/discovery-swarm-webrtc')
 
