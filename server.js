@@ -1,9 +1,16 @@
 const { SignalServer } = require('@geut/discovery-swarm-webrtc/server')
+const fs = require('fs/promises')
 
 const server = require('http').createServer((_, res) => {
   res.statusCode = 200
   res.setHeader('Content-Type', 'text/plain')
-  res.end('Signal running OK\n')
+  //res.end('Signal running OK\n')
+  fs.readFile(__dirname + "/browser/index.html")
+  .then(contents => {
+      res.setHeader("Content-Type", "text/html");
+      res.writeHead(200);
+      res.end(contents);
+  })
 })
 
 const signal = new SignalServer({ 

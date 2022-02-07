@@ -11,7 +11,6 @@ const Quickpeers = function(id, maxPeers){
   quickpeers.once = events.once.bind(events)
   quickpeers.emit = events.emit.bind(events)
   quickpeers.send = () => {}
-  
   quickpeers.off = events.off.bind(events)
 
   const swarm = Swarm({

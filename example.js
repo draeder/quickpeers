@@ -18,8 +18,11 @@ process.stdout.on('data', data => {
   else quickpeers.send(data.toString().trim())
 })
 
+let last
 quickpeers.on('message', data => {
+  if(data === last) return
   console.log(data)
+  data = last
 })
 
 quickpeers.on('disconnect', peer => {
